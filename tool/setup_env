@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+#-----------------------------------------------------------------------------------
+# This script is:
+#    1. export environment
+#    2. install environment
+#
+# Author: Hao Feng (F1)
+#
+# Init Date:   Apr. 13, 2023
+# Last Date:   Apr. 13, 2023
+#
+# Copyright (c) 2023-, FATAVAY CO., LTD.
+
+#-----------------------------------------------------------------------------------
+
+obj=$1     # export/install
+
+case $obj in
+    export | e)
+        echo "export environment ... "
+        conda env export | cut -f 1 -d "=" | grep -v "prefix" > ../environment.yml
+        ;;
+    install | i)
+        echo "install environment ... "
+        echo
+        mamba env update --file ../environment.yml
+        ;;
+esac
