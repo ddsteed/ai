@@ -24,6 +24,6 @@ case $obj in
     install | i)
         echo "install environment ... "
         echo
-        mamba env update --file ../environment.yml
+        conda env update --file ../environment.yml --prune
         ;;
 esac

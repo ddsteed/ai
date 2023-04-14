@@ -1,26 +1,31 @@
 name: base
 channels:
   - pytorch
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
   - conda-forge
   - defaults
 dependencies:
+  - accessible-pygments
+  - aiofiles
+  - aiosqlite
+  - alabaster
   - anyio
   - aom
+  - appdirs
   - appnope
   - argon2-cffi
   - argon2-cffi-bindings
   - asttokens
   - attrs
+  - babel
   - backcall
   - backports
   - backports.functools_lru_cache
   - beautifulsoup4
   - blas
+  - blas-devel
   - bleach
   - boltons
+  - bottleneck
   - brotli
   - brotli-bin
   - brotlipy
@@ -30,6 +35,7 @@ dependencies:
   - certifi
   - cffi
   - charset-normalizer
+  - click
   - colorama
   - comm
   - conda
@@ -38,9 +44,11 @@ dependencies:
   - contourpy
   - cryptography
   - cycler
+  - dataclasses
   - debugpy
   - decorator
   - defusedxml
+  - docutils
   - entrypoints
   - executing
   - expat
@@ -53,17 +61,23 @@ dependencies:
   - font-ttf-source-code-pro
   - font-ttf-ubuntu
   - fontconfig
-  - fonts-anaconda
   - fonts-conda-ecosystem
+  - fonts-conda-forge
   - fonttools
   - freetype
   - gettext
   - giflib
+  - glib
+  - glib-tools
   - gmp
   - gmpy2
   - gnutls
+  - greenlet
+  - gst-plugins-base
+  - gstreamer
   - icu
   - idna
+  - imagesize
   - importlib-metadata
   - importlib_metadata
   - importlib_resources
@@ -74,21 +88,30 @@ dependencies:
   - jedi
   - jinja2
   - jpeg
+  - json5
   - jsonpatch
   - jsonpointer
   - jsonschema
   - jupyter
+  - jupyter-book
+  - jupyter-cache
   - jupyter_client
   - jupyter_console
   - jupyter_core
   - jupyter_events
   - jupyter_server
+  - jupyter_server_fileid
   - jupyter_server_terminals
+  - jupyter_server_ydoc
+  - jupyter_ydoc
+  - jupyterlab
   - jupyterlab_pygments
+  - jupyterlab_server
   - jupyterlab_widgets
   - kiwisolver
   - krb5
   - lame
+  - latexcodec
   - lcms2
   - lerc
   - libarchive
@@ -97,23 +120,32 @@ dependencies:
   - libbrotlidec
   - libbrotlienc
   - libcblas
+  - libclang
+  - libclang13
   - libcurl
   - libcxx
   - libdeflate
   - libedit
   - libev
+  - libexpat
   - libffi
   - libgfortran
   - libgfortran5
+  - libglib
   - libiconv
   - libidn2
   - liblapack
+  - liblapacke
+  - libllvm12
+  - libllvm14
   - libmamba
   - libmambapy
   - libnghttp2
+  - libogg
   - libopenblas
   - libopus
   - libpng
+  - libpq
   - libsodium
   - libsolv
   - libsqlite
@@ -121,23 +153,36 @@ dependencies:
   - libtasn1
   - libtiff
   - libunistring
+  - libvorbis
   - libvpx
   - libwebp
   - libwebp-base
+  - libxcb
   - libxml2
+  - libxslt
   - libzlib
+  - linkify-it-py
   - llvm-openmp
+  - lxml
   - lz4-c
   - lzo
   - mamba
+  - markdown-it-py
   - markupsafe
   - matplotlib
   - matplotlib-base
   - matplotlib-inline
+  - mdit-py-plugins
+  - mdurl
   - mistune
   - mpc
   - mpfr
+  - mpmath
   - munkres
+  - mysql-common
+  - mysql-libs
+  - myst-nb
+  - myst-parser
   - nbclassic
   - nbclient
   - nbconvert
@@ -148,11 +193,18 @@ dependencies:
   - nest-asyncio
   - nettle
   - networkx
+  - nomkl
   - notebook
   - notebook-shim
+  - nspr
+  - nss
+  - numexpr
   - numpy
   - numpy-base
+  - openblas
+  - openblas-devel
   - openh264
+  - openjpeg
   - openssl
   - p11-kit
   - packaging
@@ -161,6 +213,8 @@ dependencies:
   - pandocfilters
   - parso
   - patsy
+  - pcre
+  - pcre2
   - pexpect
   - pickleshare
   - pillow
@@ -168,19 +222,25 @@ dependencies:
   - pkgutil-resolve-name
   - platformdirs
   - pluggy
+  - ply
   - pooch
   - prometheus_client
   - prompt-toolkit
   - prompt_toolkit
   - psutil
+  - pthread-stubs
   - ptyprocess
   - pure_eval
   - pybind11-abi
+  - pybtex
+  - pybtex-docutils
   - pycosat
   - pycparser
+  - pydata-sphinx-theme
   - pygments
   - pyopenssl
   - pyparsing
+  - pyqt
   - pyrsistent
   - pysocks
   - python
@@ -193,6 +253,12 @@ dependencies:
   - pytz
   - pyyaml
   - pyzmq
+  - qt-main
+  - qt-webengine
+  - qtconsole
+  - qtconsole-base
+  - qtpy
+  - qtwebkit
   - readline
   - reproc
   - reproc-cpp
@@ -206,17 +272,40 @@ dependencies:
   - seaborn-base
   - send2trash
   - setuptools
+  - sip
   - six
   - sniffio
+  - snowballstemmer
   - soupsieve
+  - sphinx
+  - sphinx-book-theme
+  - sphinx-comments
+  - sphinx-copybutton
+  - sphinx-design
+  - sphinx-external-toc
+  - sphinx-jupyterbook-latex
+  - sphinx-multitoc-numbering
+  - sphinx-thebe
+  - sphinx-togglebutton
+  - sphinxcontrib-applehelp
+  - sphinxcontrib-bibtex
+  - sphinxcontrib-devhelp
+  - sphinxcontrib-htmlhelp
+  - sphinxcontrib-jsmath
+  - sphinxcontrib-qthelp
+  - sphinxcontrib-serializinghtml
+  - sqlalchemy
   - sqlite
   - stack_data
   - statsmodels
   - svt-av1
   - sympy
+  - tabulate
   - terminado
   - tinycss2
   - tk
+  - toml
+  - tomli
   - toolz
   - torchaudio
   - torchvision
@@ -226,6 +315,7 @@ dependencies:
   - typing-extensions
   - typing_extensions
   - tzdata
+  - uc-micro-py
   - unicodedata2
   - urllib3
   - wcwidth
@@ -235,13 +325,17 @@ dependencies:
   - widgetsnbextension
   - x264
   - x265
+  - xorg-libxau
+  - xorg-libxdmcp
   - xz
+  - y-py
   - yaml
   - yaml-cpp
+  - ypy-websocket
   - zeromq
   - zipp
   - zlib
   - zstandard
   - zstd
   - pip:
-      - mpmath
+      - pyqt5-sip
