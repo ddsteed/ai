@@ -238,6 +238,7 @@ dependencies:
   - pycparser
   - pydata-sphinx-theme
   - pygments
+  - pygwalker
   - pyopenssl
   - pyparsing
   - pyqt
