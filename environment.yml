@@ -146,6 +146,7 @@ dependencies:
   - libopus
   - libpng
   - libpq
+  - libprotobuf
   - libsodium
   - libsolv
   - libsqlite
@@ -275,6 +276,7 @@ dependencies:
   - setuptools
   - sip
   - six
+  - sleef
   - sniffio
   - snowballstemmer
   - soupsieve
