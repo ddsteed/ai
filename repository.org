@@ -1,0 +1,14 @@
+* Tested Repositories
+** [[https://github.com/Significant-Gravitas/Auto-GPT][Auto-GPT]]
+它是一个实验性的开源应用程序，展示了 GPT-4 语言模型的功能。该程序由 GPT-4 驱动，可以自主实现用户设定的任何目标。
+
+** [[https://github.com/Kanaries/pygwalker][pygwalker]]
+A Python Library for Exploratory Data Analysis with Visualization.
+
+** [[https://pytorch.org][PyTorch]]
+由 Meta AI(Facebook) 人工智能研究小组开发的一种基于 Lua 编写的 Torch 库的 Python 实现的深度学习库。
+
+** [[https://github.com/WolframResearch/WolframLanguageForJupyter][Wolfram Language For Jupyter]]
+Jupyter provides a protocol (ZMQ) to connect their notebooks to various languages. This project defines a Wolfram Language kernel which can be used in Jupyter notebooks.
+
+* Untested Repositories
