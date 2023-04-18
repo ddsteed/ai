@@ -1,0 +1,64 @@
+#!/usr/bin/env zsh
+#-----------------------------------------------------------------------
+# This script is to init FPA environment
+#---
+# Author: Hao Feng (F1)
+#
+# Init Date:   Apr. 18, 2023
+# last Date:   Apr. 18, 2023
+#
+# Copyright (c) 2023, RDS
+#
+#-----------------------------------------------------------------------
+create_conda () {                                        
+    name=$1                                              
+                                                         
+    if [[ ! -f $name ]]; then                            
+        echo "create $name environment ... "
+        echo "------"
+        echo
+        conda create -y -p $name python=3.10
+    fi                                                   
+                                                         
+    conda activate $name                                 
+    conda config --env --add channels conda-forge        
+
+    conda install -y mamba -c conda-forge                
+}                                                        
+                                                         
+#----------------
+init_conda () {
+    env=$1
+    echo "init $env environment ... "
+    echo
+
+    if [[ -f $env/etc/profile.d/conda.sh ]]; then
+        source $env/etc/profile.d/conda.sh
+        conda activate $env
+        condabin=`dirname $CONDA_EXE`
+    elif [[ -f $env/bin/activate ]]; then
+        source $env/bin/activate
+    else
+        conda activate $env
+        if [ $? -ne 0 ]; then
+            echo
+            echo "$env does NOT exist, create it firstly."
+            echo "----------------------------------------------------"
+            echo
+            create_conda $env
+        fi
+    fi
+}
+
+#---------------------------------------------------------
+# main function
+
+dir=`dirname $0`
+cd $dir/..
+
+export condaenv=`pwd`/envs
+
+export PATH=$condaenv/bin:$PATH
+
+init_conda $condaenv
+

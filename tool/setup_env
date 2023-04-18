@@ -8,7 +8,7 @@
 # Author: Hao Feng (F1)
 #
 # Init Date:   Apr. 13, 2023
-# Last Date:   Apr. 13, 2023
+# Last Date:   Apr. 18, 2023
 #
 # Copyright (c) 2023-, FATAVAY CO., LTD.
 
@@ -16,14 +16,17 @@
 
 obj=$1     # export/install
 
+dir=`dirname $0`
+cd $dir/..
+
 case $obj in
     export | e)
         echo "export environment ... "
-        conda env export | cut -f 1 -d "=" | grep -v "prefix" > ../environment.yml
+        conda env export | cut -f 1 -d "=" | grep -v "prefix" > ./environment.yml
         ;;
     install | i)
         echo "install environment ... "
         echo
-        conda env update --file ../environment.yml --prune
+        conda env update --file ./environment.yml --prune
         ;;
 esac
