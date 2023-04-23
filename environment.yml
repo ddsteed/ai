@@ -200,8 +200,6 @@ dependencies:
   - nspr
   - nss
   - numexpr
-  - numpy
-  - numpy-base
   - openblas
   - openblas-devel
   - openh264
@@ -341,4 +339,7 @@ dependencies:
   - zstandard
   - zstd
   - pip:
+      - cloudpickle
+      - mlc-ai-nightly
+      - numpy
       - pyqt5-sip
