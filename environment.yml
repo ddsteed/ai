@@ -14,6 +14,7 @@ dependencies:
   - appnope
   - argon2-cffi
   - argon2-cffi-bindings
+  - arpack
   - asttokens
   - attrs
   - babel
@@ -69,6 +70,7 @@ dependencies:
   - giflib
   - glib
   - glib-tools
+  - glpk
   - gmp
   - gmpy2
   - gnutls
@@ -77,6 +79,7 @@ dependencies:
   - gstreamer
   - icu
   - idna
+  - igraph
   - imagesize
   - importlib-metadata
   - importlib_metadata
@@ -175,6 +178,7 @@ dependencies:
   - matplotlib-inline
   - mdit-py-plugins
   - mdurl
+  - metis
   - mistune
   - mpc
   - mpfr
@@ -200,6 +204,7 @@ dependencies:
   - nspr
   - nss
   - numexpr
+  - numpy-base
   - openblas
   - openblas-devel
   - openh264
@@ -299,9 +304,11 @@ dependencies:
   - sqlite
   - stack_data
   - statsmodels
+  - suitesparse
   - svt-av1
   - sympy
   - tabulate
+  - tbb
   - terminado
   - tinycss2
   - tk
