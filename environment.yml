@@ -55,6 +55,8 @@ dependencies:
   - expat
   - ffmpeg
   - filelock
+  - flask
+  - flask_cors
   - flit-core
   - fmt
   - font-ttf-dejavu-sans-mono
@@ -88,6 +90,7 @@ dependencies:
   - ipython
   - ipython_genutils
   - ipywidgets
+  - itsdangerous
   - jedi
   - jinja2
   - jpeg
@@ -329,6 +332,7 @@ dependencies:
   - wcwidth
   - webencodings
   - websocket-client
+  - werkzeug
   - wheel
   - widgetsnbextension
   - x264
@@ -346,7 +350,25 @@ dependencies:
   - zstandard
   - zstd
   - pip:
+      - asgiref
       - cloudpickle
+      - diskcache
+      - falcon
+      - fastapi
+      - fastdeploy
+      - fastdeploy-gpu-python
+      - fastdeploy-python
+      - fastdeploy-tools
+      - gevent
+      - gunicorn
+      - h11
       - mlc-ai-nightly
       - numpy
+      - opencv-python
+      - pydantic
       - pyqt5-sip
+      - starlette
+      - ujson
+      - uvicorn
+      - zope-event
+      - zope-interface
