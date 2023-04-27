@@ -40,7 +40,6 @@ dependencies:
   - cachetools
   - certifi
   - cffi
-  - chardet
   - charset-normalizer
   - click
   - colorama
@@ -403,12 +402,16 @@ dependencies:
       - gevent
       - gunicorn
       - h11
+      - jaraco-context
       - mlc-ai-nightly
+      - more-itertools
       - numpy
       - opencv-python
       - pyqt5-sip
       - starlette
       - ujson
       - uvicorn
+      - wolframalpha
+      - xmltodict
       - zope-event
       - zope-interface
