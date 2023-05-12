@@ -4,17 +4,18 @@
 # This script is:
 #    1. export environment
 #    2. install environment
+#    3. update environment
 #
 # Author: Hao Feng (F1)
 #
 # Init Date:   Apr. 13, 2023
-# Last Date:   Apr. 18, 2023
+# Last Date:   May  12, 2023
 #
 # Copyright (c) 2023-, FATAVAY CO., LTD.
 
 #-----------------------------------------------------------------------------------
 
-obj=$1     # export/install
+obj=$1     # export/update/install
 
 dir=`dirname $0`
 cd $dir/..
@@ -22,11 +23,17 @@ cd $dir/..
 case $obj in
     export | e)
         echo "export environment ... "
-        conda env export | cut -f 1 -d "=" | grep -v "prefix" > ./environment.yml
+        conda env export | cut -f 1 -d "=" | grep -v -e "prefix" -e "pyobjc-core" -e "pyobjc-framework-cocoa" > ./environment.yml
         ;;
+    update | u)
+        echo "update environment ... "
+        echo
+        conda env update --prefix ./envs --file ./environment.yml --prune
+        ;;
+
     install | i)
         echo "install environment ... "
         echo
-        conda env update --file ./environment.yml --prune
+        conda env create --file ./environment.yml -p ./envs
         ;;
 esac
