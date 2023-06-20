@@ -1,12 +1,31 @@
 name: base
 channels:
   - pytorch
+  - huggingface
   - conda-forge
   - defaults
 dependencies:
+  - aiohttp
+  - aiosignal
   - aom
+  - async-timeout
+  - attrs
+  - aws-c-auth
+  - aws-c-cal
+  - aws-c-common
+  - aws-c-compression
+  - aws-c-event-stream
+  - aws-c-http
+  - aws-c-io
+  - aws-c-mqtt
+  - aws-c-s3
+  - aws-c-sdkutils
+  - aws-checksums
+  - aws-crt-cpp
+  - aws-sdk-cpp
   - boltons
-  - brotlipy
+  - brotli
+  - brotli-bin
   - bzip2
   - c-ares
   - ca-certificates
@@ -14,11 +33,17 @@ dependencies:
   - certifi
   - cffi
   - charset-normalizer
+  - click
   - colorama
   - conda
   - conda-package-handling
   - conda-package-streaming
   - cryptography
+  - dataclasses
+  - dataclasses-json
+  - datasets
+  - dav1d
+  - dill
   - expat
   - ffmpeg
   - filelock
@@ -32,36 +57,55 @@ dependencies:
   - fonts-conda-forge
   - freetype
   - fribidi
+  - frozenlist
+  - fsspec
   - gettext
+  - gflags
+  - glog
   - gmp
   - gmpy2
   - gnutls
   - graphite2
+  - greenlet
   - harfbuzz
+  - huggingface_hub
   - icu
   - idna
+  - importlib-metadata
+  - importlib_metadata
   - jinja2
+  - joblib
   - jpeg
   - jsonpatch
   - jsonpointer
   - krb5
   - lame
+  - langchain
   - lcms2
   - lerc
+  - libabseil
   - libarchive
+  - libarrow
   - libass
   - libblas
+  - libbrotlicommon
+  - libbrotlidec
+  - libbrotlienc
   - libcblas
+  - libcrc32c
   - libcurl
   - libcxx
   - libdeflate
   - libedit
   - libev
+  - libevent
   - libexpat
   - libffi
   - libgfortran
   - libgfortran5
   - libglib
+  - libgoogle-cloud
+  - libgrpc
   - libiconv
   - libidn2
   - liblapack
@@ -71,12 +115,15 @@ dependencies:
   - libopenblas
   - libopus
   - libpng
+  - libprotobuf
   - libsolv
   - libsqlite
   - libssh2
   - libtasn1
+  - libthrift
   - libtiff
   - libunistring
+  - libutf8proc
   - libvpx
   - libwebp-base
   - libxcb
@@ -87,47 +134,76 @@ dependencies:
   - lzo
   - mamba
   - markupsafe
+  - marshmallow
+  - marshmallow-enum
   - mpc
   - mpfr
   - mpmath
+  - multidict
+  - multiprocess
+  - mypy_extensions
   - ncurses
   - nettle
   - networkx
+  - numexpr
   - numpy
+  - openapi-schema-pydantic
   - openh264
   - openjpeg
   - openssl
+  - orc
   - p11-kit
   - packaging
+  - pandas
   - pcre2
   - pillow
   - pip
   - pixman
   - pluggy
   - pthread-stubs
+  - pyarrow
   - pybind11-abi
   - pycosat
   - pycparser
+  - pydantic
   - pyopenssl
   - pysocks
   - python
+  - python-dateutil
+  - python-tzdata
+  - python-xxhash
   - python_abi
   - pytorch
+  - pytz
+  - pyyaml
+  - re2
   - readline
+  - regex
   - reproc
   - reproc-cpp
   - requests
   - ruamel.yaml
   - ruamel.yaml.clib
+  - sacremoses
+  - safetensors
   - setuptools
+  - six
+  - snappy
+  - sqlalchemy
+  - stringcase
   - svt-av1
   - sympy
+  - tenacity
   - tk
+  - tokenizers
   - toolz
   - torchaudio
   - torchvision
   - tqdm
+  - transformers
+  - typing-extensions
   - typing_extensions
+  - typing_inspect
   - tzdata
   - urllib3
   - wheel
@@ -135,8 +211,12 @@ dependencies:
   - x265
   - xorg-libxau
   - xorg-libxdmcp
+  - xxhash
   - xz
+  - yaml
   - yaml-cpp
+  - yarl
+  - zipp
   - zlib
   - zstandard
   - zstd
