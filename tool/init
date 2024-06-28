@@ -17,7 +17,7 @@ create_conda () {
         echo "create $name environment ... "
         echo "------"
         echo
-        conda create -y -p $name python=3.10
+        conda create -y -p $name
     fi                                                   
                                                          
     conda activate $name                                 

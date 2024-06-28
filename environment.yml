@@ -1,31 +1,20 @@
 name: base
 channels:
   - pytorch
-  - huggingface
   - conda-forge
   - defaults
 dependencies:
-  - aiohttp
-  - aiosignal
   - aom
-  - async-timeout
-  - attrs
-  - aws-c-auth
-  - aws-c-cal
-  - aws-c-common
-  - aws-c-compression
-  - aws-c-event-stream
-  - aws-c-http
-  - aws-c-io
-  - aws-c-mqtt
-  - aws-c-s3
-  - aws-c-sdkutils
-  - aws-checksums
-  - aws-crt-cpp
-  - aws-sdk-cpp
+  - appnope
+  - archspec
+  - asttokens
+  - backcall
+  - backports
+  - backports.functools_lru_cache
   - boltons
   - brotli
   - brotli-bin
+  - brotli-python
   - bzip2
   - c-ares
   - ca-certificates
@@ -33,17 +22,22 @@ dependencies:
   - certifi
   - cffi
   - charset-normalizer
-  - click
   - colorama
+  - comm
   - conda
+  - conda-libmamba-solver
   - conda-package-handling
   - conda-package-streaming
+  - contourpy
   - cryptography
-  - dataclasses
-  - dataclasses-json
-  - datasets
+  - cycler
   - dav1d
+  - debugpy
+  - decorator
   - dill
+  - distro
+  - exceptiongroup
+  - executing
   - expat
   - ffmpeg
   - filelock
@@ -55,75 +49,96 @@ dependencies:
   - fontconfig
   - fonts-conda-ecosystem
   - fonts-conda-forge
+  - fonttools
   - freetype
   - fribidi
-  - frozenlist
+  - frozendict
   - fsspec
   - gettext
-  - gflags
-  - glog
+  - gettext-tools
   - gmp
   - gmpy2
   - gnutls
   - graphite2
-  - greenlet
+  - h2
   - harfbuzz
-  - huggingface_hub
+  - hpack
+  - hyperframe
   - icu
   - idna
   - importlib-metadata
   - importlib_metadata
+  - ipykernel
+  - ipython
+  - jedi
   - jinja2
-  - joblib
   - jpeg
   - jsonpatch
   - jsonpointer
+  - jupyter_client
+  - jupyter_core
+  - kiwisolver
   - krb5
   - lame
-  - langchain
   - lcms2
   - lerc
   - libabseil
   - libarchive
-  - libarrow
+  - libasprintf
+  - libasprintf-devel
   - libass
   - libblas
   - libbrotlicommon
   - libbrotlidec
   - libbrotlienc
   - libcblas
-  - libcrc32c
   - libcurl
   - libcxx
+  - libdav1d7
   - libdeflate
   - libedit
   - libev
-  - libevent
   - libexpat
   - libffi
+  - libgettextpo
+  - libgettextpo-devel
   - libgfortran
   - libgfortran5
   - libglib
-  - libgoogle-cloud
-  - libgrpc
+  - libhwloc
   - libiconv
   - libidn2
+  - libintl
+  - libintl-devel
+  - libjpeg-turbo
   - liblapack
   - libmamba
   - libmambapy
   - libnghttp2
   - libopenblas
+  - libopenvino
+  - libopenvino-arm-cpu-plugin
+  - libopenvino-auto-batch-plugin
+  - libopenvino-auto-plugin
+  - libopenvino-hetero-plugin
+  - libopenvino-ir-frontend
+  - libopenvino-onnx-frontend
+  - libopenvino-paddle-frontend
+  - libopenvino-pytorch-frontend
+  - libopenvino-tensorflow-frontend
+  - libopenvino-tensorflow-lite-frontend
   - libopus
   - libpng
   - libprotobuf
+  - libsodium
   - libsolv
   - libsqlite
   - libssh2
   - libtasn1
-  - libthrift
   - libtiff
+  - libtorch
   - libunistring
-  - libutf8proc
+  - libuv
   - libvpx
   - libwebp-base
   - libxcb
@@ -134,89 +149,102 @@ dependencies:
   - lzo
   - mamba
   - markupsafe
-  - marshmallow
-  - marshmallow-enum
+  - matplotlib
+  - matplotlib-base
+  - matplotlib-inline
+  - menuinst
+  - meson
   - mpc
   - mpfr
   - mpmath
-  - multidict
   - multiprocess
-  - mypy_extensions
+  - munkres
   - ncurses
+  - nest-asyncio
   - nettle
   - networkx
-  - numexpr
+  - ninja
+  - nomkl
   - numpy
-  - openapi-schema-pydantic
   - openh264
   - openjpeg
   - openssl
-  - orc
   - p11-kit
   - packaging
   - pandas
+  - parso
   - pcre2
+  - pexpect
+  - pickleshare
   - pillow
-  - pip
   - pixman
+  - platformdirs
   - pluggy
+  - pooch
+  - prompt-toolkit
+  - prompt_toolkit
+  - psutil
   - pthread-stubs
-  - pyarrow
+  - ptyprocess
+  - pugixml
+  - pure_eval
   - pybind11-abi
   - pycosat
   - pycparser
-  - pydantic
+  - pygments
   - pyopenssl
+  - pyparsing
   - pysocks
   - python
   - python-dateutil
   - python-tzdata
-  - python-xxhash
   - python_abi
   - pytorch
   - pytz
   - pyyaml
-  - re2
+  - pyzmq
   - readline
-  - regex
   - reproc
   - reproc-cpp
   - requests
   - ruamel.yaml
   - ruamel.yaml.clib
-  - sacremoses
-  - safetensors
+  - scipy
   - setuptools
   - six
+  - sleef
   - snappy
-  - sqlalchemy
-  - stringcase
+  - stack_data
   - svt-av1
   - sympy
-  - tenacity
+  - tbb
   - tk
-  - tokenizers
   - toolz
   - torchaudio
   - torchvision
+  - tornado
   - tqdm
-  - transformers
+  - traitlets
+  - truststore
   - typing-extensions
   - typing_extensions
-  - typing_inspect
   - tzdata
+  - unicodedata2
   - urllib3
+  - wcwidth
   - wheel
   - x264
   - x265
   - xorg-libxau
   - xorg-libxdmcp
-  - xxhash
   - xz
   - yaml
   - yaml-cpp
-  - yarl
+  - zeromq
   - zipp
   - zlib
   - zstandard
   - zstd
+  - pip:
+      - pip
+prefix: /Users/fengh/Research/AI/AI/envs
