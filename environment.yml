@@ -247,4 +247,3 @@ dependencies:
   - zstd
   - pip:
       - pip
-prefix: /Users/fengh/Research/AI/AI/envs
