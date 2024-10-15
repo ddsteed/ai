@@ -1,16 +1,21 @@
 name: base
 channels:
-  - pytorch
   - conda-forge
   - defaults
 dependencies:
+  - anyio
   - aom
   - appnope
   - archspec
+  - argon2-cffi
+  - argon2-cffi-bindings
+  - arrow
   - asttokens
-  - backcall
-  - backports
-  - backports.functools_lru_cache
+  - async-lru
+  - attrs
+  - babel
+  - beautifulsoup4
+  - bleach
   - boltons
   - brotli
   - brotli-bin
@@ -18,6 +23,8 @@ dependencies:
   - bzip2
   - c-ares
   - ca-certificates
+  - cached-property
+  - cached_property
   - cairo
   - certifi
   - cffi
@@ -29,13 +36,14 @@ dependencies:
   - conda-package-handling
   - conda-package-streaming
   - contourpy
-  - cryptography
+  - cpython
   - cycler
   - dav1d
   - debugpy
   - decorator
-  - dill
+  - defusedxml
   - distro
+  - entrypoints
   - exceptiongroup
   - executing
   - expat
@@ -50,42 +58,62 @@ dependencies:
   - fonts-conda-ecosystem
   - fonts-conda-forge
   - fonttools
+  - fqdn
   - freetype
   - fribidi
   - frozendict
   - fsspec
-  - gettext
-  - gettext-tools
   - gmp
   - gmpy2
-  - gnutls
   - graphite2
+  - h11
   - h2
   - harfbuzz
+  - hdf5
   - hpack
+  - httpcore
+  - httpx
   - hyperframe
   - icu
   - idna
+  - imath
   - importlib-metadata
   - importlib_metadata
+  - importlib_resources
   - ipykernel
   - ipython
+  - ipywidgets
+  - isoduration
+  - jasper
   - jedi
   - jinja2
-  - jpeg
+  - json5
   - jsonpatch
   - jsonpointer
+  - jsonschema
+  - jsonschema-specifications
+  - jsonschema-with-format-nongpl
+  - jupyter
+  - jupyter-lsp
   - jupyter_client
+  - jupyter_console
   - jupyter_core
+  - jupyter_events
+  - jupyter_server
+  - jupyter_server_terminals
+  - jupyterlab
+  - jupyterlab_pygments
+  - jupyterlab_server
+  - jupyterlab_widgets
   - kiwisolver
   - krb5
   - lame
   - lcms2
   - lerc
   - libabseil
+  - libaec
   - libarchive
   - libasprintf
-  - libasprintf-devel
   - libass
   - libblas
   - libbrotlicommon
@@ -94,28 +122,26 @@ dependencies:
   - libcblas
   - libcurl
   - libcxx
-  - libdav1d7
   - libdeflate
   - libedit
   - libev
   - libexpat
   - libffi
   - libgettextpo
-  - libgettextpo-devel
   - libgfortran
   - libgfortran5
   - libglib
   - libhwloc
   - libiconv
-  - libidn2
   - libintl
-  - libintl-devel
   - libjpeg-turbo
   - liblapack
+  - liblapacke
   - libmamba
   - libmambapy
   - libnghttp2
   - libopenblas
+  - libopencv
   - libopenvino
   - libopenvino-arm-cpu-plugin
   - libopenvino-auto-batch-plugin
@@ -134,10 +160,8 @@ dependencies:
   - libsolv
   - libsqlite
   - libssh2
-  - libtasn1
   - libtiff
   - libtorch
-  - libunistring
   - libuv
   - libvpx
   - libwebp-base
@@ -149,38 +173,45 @@ dependencies:
   - lzo
   - mamba
   - markupsafe
-  - matplotlib
   - matplotlib-base
   - matplotlib-inline
   - menuinst
-  - meson
+  - mistune
   - mpc
   - mpfr
   - mpmath
-  - multiprocess
   - munkres
+  - nbclient
+  - nbconvert-core
+  - nbformat
   - ncurses
   - nest-asyncio
-  - nettle
   - networkx
-  - ninja
   - nomkl
+  - notebook
+  - notebook-shim
   - numpy
+  - opencv
+  - openexr
   - openh264
   - openjpeg
   - openssl
-  - p11-kit
+  - overrides
   - packaging
   - pandas
+  - pandocfilters
   - parso
+  - patsy
   - pcre2
   - pexpect
   - pickleshare
   - pillow
+  - pip
   - pixman
+  - pkgutil-resolve-name
   - platformdirs
   - pluggy
-  - pooch
+  - prometheus_client
   - prompt-toolkit
   - prompt_toolkit
   - psutil
@@ -188,51 +219,72 @@ dependencies:
   - ptyprocess
   - pugixml
   - pure_eval
+  - py-cpuinfo
+  - py-opencv
   - pybind11-abi
   - pycosat
   - pycparser
   - pygments
-  - pyopenssl
   - pyparsing
   - pysocks
   - python
   - python-dateutil
+  - python-fastjsonschema
+  - python-json-logger
   - python-tzdata
   - python_abi
   - pytorch
   - pytz
   - pyyaml
   - pyzmq
+  - qhull
   - readline
+  - referencing
   - reproc
   - reproc-cpp
   - requests
+  - rfc3339-validator
+  - rfc3986-validator
+  - rpds-py
   - ruamel.yaml
   - ruamel.yaml.clib
   - scipy
+  - seaborn
+  - seaborn-base
+  - send2trash
   - setuptools
   - six
   - sleef
   - snappy
+  - sniffio
+  - soupsieve
   - stack_data
+  - statsmodels
   - svt-av1
   - sympy
   - tbb
+  - terminado
+  - tinycss2
   - tk
-  - toolz
-  - torchaudio
-  - torchvision
+  - tomli
   - tornado
   - tqdm
   - traitlets
   - truststore
+  - types-python-dateutil
   - typing-extensions
   - typing_extensions
+  - typing_utils
   - tzdata
-  - unicodedata2
+  - ultralytics
+  - uri-template
   - urllib3
   - wcwidth
+  - webcolors
+  - webencodings
+  - websocket-client
   - wheel
+  - widgetsnbextension
   - x264
   - x265
   - xorg-libxau
@@ -245,5 +297,3 @@ dependencies:
   - zlib
   - zstandard
   - zstd
-  - pip:
-      - pip
